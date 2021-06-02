@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.App {
+    text-align: center;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.App-logo {
+    height: 60px;
+    width: 60px;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    min-height: 50px;
+    -webkit-box-flex: 0;
+}
+
+.App-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.App-footer {
+    flex: none;
+    margin-top: auto;
+    min-height: 40px;
+    -webkit-box-flex: 0;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+.App-content {
+    width: 80%;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+button,
+button:focus,
+button:hover {
+    background: none;
+    border: none;
+    color: white;
+    outline: none !important;
+    text-decoration: none;
+}
+
+.btn-action {
+    background: rgb(20, 45, 94);
+    border-radius: 5px;
+    padding: 7px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 1rem;
+}
+
+.btn-action-outline {
+    background: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 6px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.btn-action:focus,
+.btn-action:hover,
+.btn-action-outline:focus,
+.btn-action-outline:hover {
+    background: rgb(42, 92, 190);
+    border-right: black;
+    border-bottom: black;
+    border-radius: 5px;
+    padding: 7px 5px 5px 7px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    width: 80px;
+}
+
+.input-error {
+    color: red;
+}
+
+.input-box {
+    margin: 1rem;
+    background: rgb(0, 7, 22);
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.output-box {
+    margin: 1rem;
+    border: 5px solid white;
+}
+
+.output-condition {
+    border: 3px solid red;
+    padding: 10px;
+    color: rgb(241, 157, 157);
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
